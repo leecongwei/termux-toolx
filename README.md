@@ -10,7 +10,7 @@ apt update #基本工具下载
 
 pkg install git#基本工具下载
 
-克隆git clone https://github.com/Rajkumrdusad/Tool-X.git
+克隆git clone https://github.com/leecongwei/Tool-X.git
 
 cd Tool-X
 
