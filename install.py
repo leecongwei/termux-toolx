@@ -15,13 +15,15 @@ class tool:
       system=sys()
       os.system("clear")
       logo.ins_tnc()
-      inp=input("\033[1;33m 前方施工不能下载 [不给你开/没有选择]> \033[00m")                               if inp=="y" or inp=="yes":
+      inp=input("\033[1;33m 前方施工不能下载 [不给你开/没有选择]> \033[00m")                               
+      if inp=="y" or inp=="yes":
         os.system("clear")
         logo.installing()
         if system.sudo is not None:
           #require root permission
           if os.path.exists(system.conf_dir+"/termux-toolx"):
-            pass                                                                                               else:
+            pass                                                                                               
+          else:
             os.system(system.sudo+" mkdir "+system.conf_dir+"/termux-toolx")
           os.system(system.sudo+" cp -r modules core termux-toolx.py "+system.conf_dir+"/termux-toolx")
           os.system(system.sudo+" cp -r core/termux-toolx "+system.bin)
