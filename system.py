@@ -1,14 +1,17 @@
 import os
 import sys
-try:                                                                                                   import requests
-except:                                                                                                os.system("pip install requests")
+try:                                                                                                   
+  import requests
+except:                                                                                                
+  os.system("pip install requests")
   os.system("pip3 install requests")
 
 class sys:
   pac=None
   sys=None
   home=os.getenv("HOME")
-  bin=None                                                                                             sudo=None
+  bin=None                                                                                             
+  sudo=None
   conf_dir=None
   def __init__(self):
 
@@ -23,11 +26,14 @@ class sys:
       self.sudo="sudo"
     elif os.path.exists("/usr/sbin/sudo"):
       self.sudo="sudo"
-    elif os.path.exists("/sbin/sudo"):                                                                     self.sudo="sudo"
+    elif os.path.exists("/sbin/sudo"):                                                                     
+      self.sudo="sudo"
 
     # checking for configuration dir
     if os.path.exists("/usr/etc"):
-      self.conf_dir="/usr/etc"                                                                           elif os.path.exists("/data/data/com.termux/files/usr/etc"):                                            self.conf_dir="/data/data/com.termux/files/usr/etc"
+      self.conf_dir="/usr/etc"                                                                           
+      elif os.path.exists("/data/data/com.termux/files/usr/etc"):                                            
+        self.conf_dir="/data/data/com.termux/files/usr/etc"
     elif os.path.exists("/etc"):
       self.conf_dir="/etc"                                                                           
     # checking for system bin dir and system package manager
