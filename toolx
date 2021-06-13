@@ -7,6 +7,6 @@ if __name__=="__main__":
     main.menu()
   except KeyboardInterrupt:
     os.system("clear")
-    logo.拜拜()
+    logo.bye()
 ~
 ~
