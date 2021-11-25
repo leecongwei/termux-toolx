@@ -35,7 +35,8 @@ class sys:
       elif os.path.exists("/data/data/com.termux/files/usr/etc"):                                            
         self.conf_dir="/data/data/com.termux/files/usr/etc"
     elif os.path.exists("/etc"):
-      self.conf_dir="/etc"                                                                           
+      self.conf_dir="/etc"
+                                                                           
     # checking for system bin dir and system package manager
     if os.path.exists("/usr/bin/yum"):
       self.sys="linux"
