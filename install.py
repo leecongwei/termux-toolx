@@ -1,8 +1,8 @@
 import os
 import sys
 from time import sleep
-from modules.logo import *
-from modules.system import *
+from modules.logo import 
+from modules.system import 
 
 yellow="\033[1;33m"
 blue="\033[1;34m"
