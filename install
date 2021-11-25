@@ -1,5 +1,5 @@
-# Tool Name :- termux-toolx 
-# Date :- 15/10/2020
+# Tool Name :-termux-toolx
+# Date :- 25/11/2021
 
 if [ -e  /usr/lib/sudo ];then
   if [ -e /usr/bin/apt-get ];then
